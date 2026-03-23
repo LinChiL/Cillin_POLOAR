@@ -133,7 +133,3 @@ Code/In_model/
 *.ckpt
 
 # Figures
-*.png
-*.jpg
-*.jpeg
-*.pdf
