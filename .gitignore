@@ -121,6 +121,7 @@ conda*.log
 # Data
 data/
 Code/In_data/
+Code/In_model/
 *.pth
 *.pkl
 *.npy

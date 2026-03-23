@@ -1,0 +1,36 @@
+[The Apex Predator: Adulthood Training] DNA Fixed at 7.38e-06...
+Loading CIFAR-10 data into GPU memory...
+Epoch 0: L=3.958, Gene_Stable=True
+Epoch 10: L=-19.160, Gene_Stable=True
+Epoch 20: L=-13.900, Gene_Stable=True
+Epoch 30: L=-14.191, Gene_Stable=True
+Epoch 40: L=4.984, Gene_Stable=True
+Epoch 50: L=14.887, Gene_Stable=True
+Epoch 60: L=33.871, Gene_Stable=True
+Epoch 70: L=45.458, Gene_Stable=True
+Epoch 80: L=50.889, Gene_Stable=True
+Epoch 90: L=74.093, Gene_Stable=True
+
+--- Final Predator Report ---
+Accuracy (Logic): 0.7508
+Robustness (Survival): 0.5631
+Leverage (Soul Density): 74.0930
+
+
+[The Apex Predator: Adulthood Training] DNA Fixed at 7.29e-06...
+Loading CIFAR-10 data into GPU memory...
+Epoch 0: L=8.433, Gene_Stable=True
+Epoch 10: L=-34.231, Gene_Stable=True
+Epoch 20: L=-45.843, Gene_Stable=True
+Epoch 30: L=-51.484, Gene_Stable=True
+Epoch 40: L=-51.869, Gene_Stable=True
+Epoch 50: L=-54.874, Gene_Stable=True
+Epoch 60: L=-54.414, Gene_Stable=True
+Epoch 70: L=-55.025, Gene_Stable=True
+Epoch 80: L=-55.906, Gene_Stable=True
+Epoch 90: L=-55.997, Gene_Stable=True
+
+--- Final Predator Report ---
+Accuracy (Logic): 0.7126
+Robustness (Survival): 0.3910
+Leverage (Soul Density): -55.9974
