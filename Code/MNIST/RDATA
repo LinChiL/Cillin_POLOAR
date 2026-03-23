@@ -1,0 +1,33 @@
+T1:
+
+
+(F:\Entropy_Intell\Entro) F:\Entropy_Intell\Code>python entropy_Kona_T1.py
+Lambda   | Accuracy   | Robustness | Internal Entropy
+0        | 0.9770     | 0.9668     | -27.8610
+0.001    | 0.9711     | 0.9562     | 243.8161
+0.01     | 0.9614     | 0.9383     | 397.3769
+0.1      | 0.9347     | 0.9165     | 528.1119
+0.5      | 0.1028     | 0.0984     | 602.8505
+
+
+
+T7:
+
+
+(F:\Entropy_Intell\Entro) F:\Entropy_Intell\Code>python The_LifeT7_Soluma.py
+
+[Energy=5000 Simulation] Starting Singularity Hunt...
+Lambda     | L (Lev)  | Accuracy   | Robustness
+-------------------------------------------------------
+2.90e-06   | -0.584   | 0.9788     | 0.9651
+2.92e-06   | 1.744    | 0.9795     | 0.9683
+2.94e-06   | 2.136    | 0.9824     | 0.9689
+2.96e-06   | 2.111    | 0.9796     | 0.9687
+2.98e-06   | 0.801    | 0.9821     | 0.9721
+3.00e-06   | 1.088    | 0.9778     | 0.9657
+Singularity Hunt lambda values: 100%|█████| 6/6 [31:18<00:00, 313.11s/lambda, Current λ=3.00e-06, L=1.088, Status=LIFE]
+
+(F:\Entropy_Intell\Entro) F:\Entropy_Intell\Code>
+
+
+2.98e-06   | 0.801    | 0.9821     | 0.9721
