@@ -1,3 +1,7 @@
+
+[![DOI](https://zenodo.org/badge/1189337876.svg)](https://doi.org/10.5281/zenodo.19206297)
+DOI：10.5281/zenodo.19206298
+
 # Cillin_POLOAR
 
 ## 项目简介
@@ -21,29 +25,6 @@
 - **L < 0.8**：过渡态（TRANSITION）
 - **0.8 < L < 1.2**：生命态（LIFE）
 - **L > 1.2**：坍缩态（COLLAPSED）
-
-## 文件结构
-
-```
-Cillin_POLOAR/
-├── Code/
-│   ├── MNIST/           # MNIST数据集实验代码
-│   │   ├── The_Life.py  # 基础版本
-│   │   ├── The_LifeT2.py 
-│   │   ├── The_LifeT3.py # GPU优化版本
-│   │   ├── The_LifeT3_G.py # 混合精度训练版本
-│   │   ├── The_LifeT4.py # 精细扫描版本
-│   │   ├── The_LifeT5.py # 边缘采样
-│   │   ├── The_LifeT6_Goma.py 
-│   │   ├── The_LifeT7_Soluma.py 
-│   │   └── entropy_Kona_T1.py # 量子模拟版本
-│   └── CIFAR-10/        # CIFAR-10数据集实验代码
-│       ├── The_LifeT8.py # 基础版本
-│       ├── The_LifeT9.py # 精细扫描版本
-│       └── The_LifeT10_Cama.py # 优化版本
-├── LICENSE.txt          # MIT许可证
-└── .gitignore          # Git忽略文件
-```
 
 ## 安装说明
 

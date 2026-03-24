@@ -6,6 +6,8 @@ from torchvision import datasets, transforms
 import numpy as np
 import matplotlib.pyplot as plt
 from tqdm import tqdm
+import csv
+import os
 
 # [物理增强] 开启 CUDNN 极致动员
 if torch.cuda.is_available():
@@ -16,7 +18,7 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 transform = transforms.Compose([transforms.ToTensor(), transforms.Normalize((0.1307,), (0.3081,))])
 
 # 预加载MNIST数据到GPU
-print("预加载MNIST数据到GPU...")
+print("MNIST → GPU...")
 train_set = datasets.MNIST(r'f:\Entropy_Intell\Code\In_data', train=True, download=True, transform=transform)
 test_set = datasets.MNIST(r'f:\Entropy_Intell\Code\In_data', train=False, transform=transform)
 
@@ -73,7 +75,7 @@ def compute_reaction_space_volume(mu, log_var):
     entropy = 0.5 * torch.sum(1 + log_var + np.log(2 * np.pi), dim=1)
     return entropy.mean()
 
-def poloar_diagnostic(mu, log_var, loss, energy_const=1e4):
+def poloar_diagnostic(mu, log_var, loss, energy_const=1e8):
     """
     POLOAR 诊断系统：计算杠杆率 L
     注意：调整了 energy_const 以适应当前模型规模
@@ -137,20 +139,54 @@ def train_cycle(lambda_entropy, epochs=8):
     return correct/10000, rob_correct/10000, L
 
 # --- 执行寻找“生命之缝”实验 ---
-# 极微量级的 lambda 探索
-lambdas = [0, 1e-7, 1e-6, 5e-6, 1e-5, 5e-5] 
+# 使用二分法逼近 L=1 的 Lambda 值
+import numpy as np
+
+# 二分法参数
+left = 1e-10
+right = 1e-5
+tolerance = 1e-12
+max_iterations = 50
 results = {"λ": [], "acc": [], "rob": [], "L": []}
 
-print(f"{'Lambda':<10} | {'L (Lev)':<8} | {'Accuracy':<10} | {'Robustness'}")
-print("-" * 55)
+print(f"{'Iteration':<8} | {'Lambda':<12} | {'L (Lev)':<8} | {'Accuracy':<10} | {'Robustness'}")
+print("-" * 65)
 
-for l in lambdas:
-    acc, rob, L = train_cycle(l)
-    results["λ"].append(l)
+for iteration in range(max_iterations):
+    lambda_mid = (left + right) / 2
+    acc, rob, L = train_cycle(lambda_mid)
+    
+    results["λ"].append(lambda_mid)
     results["acc"].append(acc)
     results["rob"].append(rob)
     results["L"].append(L)
-    print(f"{l:<10.1e} | {L:<8.3f} | {acc:<10.4f} | {rob:<10.4f}")
+    
+    print(f"{iteration:<8} | {lambda_mid:<12.2e} | {L:<8.3f} | {acc:<10.4f} | {rob:<10.4f}")
+    
+    # 保存数据到CSV文件（追加模式）- 独立实验文件
+    csv_path = r'f:\Entropy_Intell\Code\MNIST\CSV\MNIST_E8.csv'
+    os.makedirs(os.path.dirname(csv_path), exist_ok=True)
+    
+    # 检查文件是否存在，不存在则创建表头
+    file_exists = os.path.exists(csv_path)
+    with open(csv_path, 'a', newline='') as f:
+        writer = csv.writer(f)
+        if not file_exists:
+            writer.writerow(['Lambda', 'L', 'Accuracy', 'Robustness'])
+        writer.writerow([lambda_mid, L, acc, rob])
+    
+    # 二分法更新区间
+    if abs(L - 1.0) < tolerance:
+        print(f"\n找到 L=1 的近似解: λ={lambda_mid:.2e}, L={L:.3f}")
+        break
+    
+    if L < 1.0:
+        left = lambda_mid
+    else:
+        right = lambda_mid
+
+if iteration == max_iterations - 1:
+    print(f"\n达到最大迭代次数，最终结果: λ={lambda_mid:.2e}, L={L:.3f}")
 
 # --- 可视化倒U型曲线 ---
 plt.figure(figsize=(10, 5))
@@ -162,4 +198,24 @@ plt.ylabel("Performance")
 plt.title("The Search for the Life-Point (POLOAR Theory)")
 plt.legend()
 plt.grid(True, alpha=0.3)
+
+# 保存图片到指定目录
+import os
+save_dir = r'f:\Entropy_Intell\Code\MNIST\TB_Figure'
+os.makedirs(save_dir, exist_ok=True)
+plt.savefig(os.path.join(save_dir, 'Life_Point_Search.png'), dpi=300, bbox_inches='tight')
+print(f"\n图表已保存到: {os.path.join(save_dir, 'Life_Point_Search.png')}")
+
+# --- 可视化 Lambda-L 关系图 ---
+plt.figure(figsize=(10, 5))
+plt.plot(results["λ"], results["L"], 'go-', linewidth=2, markersize=8)
+plt.xlabel("Lambda (Entropy Driving Force)")
+plt.ylabel("Leverage L (Complexity / Budget)")
+plt.title("Lambda-L Relationship (POLOAR Phase Diagram)")
+plt.axhline(y=1.0, color='r', linestyle='--', label='Life Boundary (L=1)')
+plt.legend()
+plt.grid(True, alpha=0.3)
+plt.savefig(os.path.join(save_dir, 'Lambda_L_Relationship.png'), dpi=300, bbox_inches='tight')
+print(f"Lambda-L关系图已保存到: {os.path.join(save_dir, 'Lambda_L_Relationship.png')}")
+
 plt.show()

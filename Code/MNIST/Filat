@@ -1,0 +1,10 @@
+
+TB1 进行多样本测试
+
+TB2 从1到1e-7 每个数量级10次
+
+TB3 从1到0 一百次
+
+TO1 二分逼近L=1，energy_const=1e8
+
+TO2 二分逼近L=1，energy_const=1e16
