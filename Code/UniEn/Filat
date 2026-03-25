@@ -1,0 +1,33 @@
+
+XL使用熵驱动
+
+(F:\Entropy_Intell\Entro) F:\Entropy_Intell\Code\UniEn>python Life_ToR1_XL50.py
+============================================================
+POLOAR Universe Simulation
+============================================================
+
+Initial state: SILENT (∇Ω ≈ 0)
+  Adding quantum fluctuations...
+
+   BUBBLE NUCLEATION at step 0
+   ∇Ω_max = 5000.0000
+Step    0 | L=1.5413 | Global L=1.0000 | R=1.00e+00 | NUCLEATED
+Step   50 | L=1.5413 | Global L=1.0000 | R=1.00e+00 | NUCLEATED
+Step  100 | L=1.5413 | Global L=1.0000 | R=1.00e+00 | NUCLEATED
+Step  150 | L=1.5413 | Global L=1.0000 | R=1.00e+00 | NUCLEATED
+Step  200 | L=1.5413 | Global L=1.0000 | R=1.00e+00 | NUCLEATED
+   BUBBLE FILLED UNIVERSE at step 201
+
+============================================================
+Final L: 1.5413
+Final Global L: 1.0000
+Final R: 1.00e+00 s⁻¹
+============================================================
+
+BL通过第二定律改进
+
+Uni_Co1 进行一次原初性爆炸模拟
+
+Uni_Co2 进行一次原初性大爆炸模拟，约等于创世
+
+Uni_Co4_Pon 尝试产生膨胀
