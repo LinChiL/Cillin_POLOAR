@@ -6,7 +6,7 @@ DOI：10.5281/zenodo.19206298
 
 ## 项目简介
 
-**Cillin_POLOAR** 是一个基于熵驱动AI的研究项目，探索智能系统在临界状态下的行为。项目名称中的 **Cillin** 代表 **C**onsciousness **I**n **L**ife **L**earning **I**n **N**etworks，而 **POLOAR** 代表 **P**hysical **O**rigin **L**everage **O**f **A**rtificial **R**easoning。
+**Cillin_POLOAR** 是一POLOAR的实验证明实践工程
 
 ## 核心理论
 
