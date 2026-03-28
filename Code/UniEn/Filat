@@ -31,3 +31,91 @@ Uni_Co1 进行一次原初性爆炸模拟
 Uni_Co2 进行一次原初性大爆炸模拟，约等于创世
 
 Uni_Co4_Pon 尝试产生膨胀
+
+
+Uni_L1 尝试捕获粒子
+
+Uni_L2 尝试捕获粒子，从大爆炸开始
+
+Uni_L3 尝试捕获原初原子
+
+(F:\Entropy_Intell\Entro) F:\Entropy_Intell\Code\UniEn>python Uni_L4_Db.py
+============================================================
+POLOAR Particle Universe Simulation
+============================================================
+Starting POLOAR Particle Universe...
+Total Energy: 20000.0, Points: 10000
+Step      0 | Particles:  64 | Max Grad: 190.63 | Types: {'baryon': 56, 'boson': 8} | Atoms: 1208
+Step   1000 | Particles:  88 | Max Grad: 3.04 | Types: {'meson': 7, 'baryon': 53, 'boson': 27, 'lepton': 1} | Atoms: 358
+Step   2000 | Particles:  40 | Max Grad: 3.59 | Types: {'lepton': 2, 'baryon': 18, 'boson': 12, 'meson': 8} | Atoms: 33
+Step   3000 | Particles:  47 | Max Grad: 4.46 | Types: {'baryon': 32, 'meson': 7, 'boson': 6, 'lepton': 2} | Atoms: 14
+Step   4000 | Particles:  46 | Max Grad: 2.37 | Types: {'boson': 5, 'meson': 3, 'baryon': 34, 'lepton': 4} | Atoms: 17
+Step   5000 | Particles:  95 | Max Grad: 2.09 | Types: {'baryon': 71, 'boson': 19, 'meson': 3, 'lepton': 2} | Atoms: 429
+Step   6000 | Particles:  38 | Max Grad: 2.02 | Types: {'boson': 12, 'baryon': 22, 'lepton': 1, 'meson': 3} | Atoms: 13
+Step   7000 | Particles:  35 | Max Grad: 4.61 | Types: {'baryon': 22, 'boson': 9, 'lepton': 1, 'meson': 3} | Atoms: 15
+Step   8000 | Particles: 100 | Max Grad: 4.05 | Types: {'baryon': 47, 'meson': 2, 'boson': 50, 'lepton': 1} | Atoms: 850
+Step   9000 | Particles:  27 | Max Grad: 5.00 | Types: {'baryon': 14, 'boson': 7, 'lepton': 2, 'meson': 4} | Atoms: 8
+Step  10000 | Particles:  33 | Max Grad: 2.59 | Types: {'baryon': 25, 'boson': 3, 'lepton': 1, 'meson': 4} | Atoms: 23
+Step  11000 | Particles:  91 | Max Grad: 2.10 | Types: {'baryon': 77, 'boson': 12, 'lepton': 2} | Atoms: 497
+Step  12000 | Particles: 204 | Max Grad: 4.69 | Types: {'lepton': 4, 'baryon': 165, 'boson': 33, 'meson': 2} | Atoms: 3528
+Step  13000 | Particles:  22 | Max Grad: 2.42 | Types: {'meson': 4, 'baryon': 13, 'boson': 4, 'lepton': 1} | Atoms: 7
+Step  14000 | Particles:  41 | Max Grad: 5.11 | Types: {'meson': 6, 'baryon': 16, 'lepton': 3, 'boson': 16} | Atoms: 16
+Step  15000 | Particles:  37 | Max Grad: 3.49 | Types: {'lepton': 3, 'baryon': 24, 'boson': 10} | Atoms: 20
+Step  16000 | Particles:  14 | Max Grad: 2.20 | Types: {'baryon': 8, 'lepton': 4, 'boson': 2} | Atoms: 1
+Step  17000 | Particles:  18 | Max Grad: 2.18 | Types: {'lepton': 4, 'baryon': 10, 'boson': 3, 'meson': 1} | Atoms: 8
+Step  18000 | Particles:  28 | Max Grad: 2.30 | Types: {'baryon': 17, 'boson': 6, 'meson': 4, 'lepton': 1} | Atoms: 7
+Step  19000 | Particles:  51 | Max Grad: 2.04 | Types: {'meson': 12, 'baryon': 30, 'boson': 9} | Atoms: 14
+Step  20000 | Particles:  16 | Max Grad: 2.19 | Types: {'baryon': 8, 'lepton': 6, 'meson': 2} | Atoms: 4
+Step  21000 | Particles:  40 | Max Grad: 2.59 | Types: {'meson': 4, 'baryon': 33, 'lepton': 1, 'boson': 2} | Atoms: 46
+Step  22000 | Particles:  35 | Max Grad: 2.73 | Types: {'baryon': 19, 'meson': 4, 'boson': 10, 'lepton': 2} | Atoms: 10
+Step  23000 | Particles:  69 | Max Grad: 7.68 | Types: {'meson': 2, 'baryon': 57, 'boson': 8, 'lepton': 2} | Atoms: 25
+Step  24000 | Particles:  37 | Max Grad: 4.72 | Types: {'baryon': 21, 'lepton': 2, 'meson': 5, 'boson': 9} | Atoms: 6
+Step  25000 | Particles:  34 | Max Grad: 3.61 | Types: {'lepton': 2, 'baryon': 16, 'meson': 6, 'boson': 10} | Atoms: 20
+Step  26000 | Particles:  63 | Max Grad: 4.81 | Types: {'baryon': 31, 'boson': 28, 'lepton': 1, 'meson': 3} | Atoms: 259
+Step  27000 | Particles:  35 | Max Grad: 2.81 | Types: {'lepton': 3, 'baryon': 30, 'meson': 2} | Atoms: 9
+Step  28000 | Particles:  19 | Max Grad: 2.23 | Types: {'meson': 11, 'boson': 3, 'baryon': 3, 'lepton': 2} | Atoms: 2
+Step  29000 | Particles:  20 | Max Grad: 3.45 | Types: {'lepton': 4, 'boson': 6, 'meson': 3, 'baryon': 7} | Atoms: 5
+Step  30000 | Particles:  45 | Max Grad: 3.15 | Types: {'meson': 15, 'baryon': 19, 'lepton': 2, 'boson': 9} | Atoms: 9
+Step  31000 | Particles:  85 | Max Grad: 2.26 | Types: {'baryon': 64, 'lepton': 5, 'boson': 16} | Atoms: 478
+Step  32000 | Particles:  24 | Max Grad: 5.73 | Types: {'baryon': 17, 'boson': 5, 'lepton': 1, 'meson': 1} | Atoms: 6
+Step  33000 | Particles:  61 | Max Grad: 5.79 | Types: {'baryon': 46, 'lepton': 1, 'boson': 9, 'meson': 5} | Atoms: 26
+Step  34000 | Particles:  23 | Max Grad: 10.56 | Types: {'baryon': 15, 'meson': 3, 'lepton': 5} | Atoms: 2
+Step  35000 | Particles:  73 | Max Grad: 2.91 | Types: {'baryon': 49, 'boson': 14, 'meson': 10} | Atoms: 194
+Step  36000 | Particles:  36 | Max Grad: 3.91 | Types: {'baryon': 27, 'lepton': 6, 'meson': 3} | Atoms: 9
+Step  37000 | Particles:  21 | Max Grad: 2.76 | Types: {'meson': 8, 'lepton': 3, 'baryon': 9, 'boson': 1} | Atoms: 3
+Step  38000 | Particles:  30 | Max Grad: 7.91 | Types: {'meson': 7, 'boson': 2, 'baryon': 15, 'lepton': 6} | Atoms: 13
+Step  39000 | Particles:  87 | Max Grad: 5.88 | Types: {'baryon': 72, 'lepton': 5, 'boson': 10} | Atoms: 243
+Step  40000 | Particles:  52 | Max Grad: 3.55 | Types: {'baryon': 32, 'boson': 12, 'meson': 8} | Atoms: 11
+Step  41000 | Particles:  30 | Max Grad: 5.10 | Types: {'boson': 6, 'baryon': 19, 'meson': 4, 'lepton': 1} | Atoms: 8
+Step  42000 | Particles:  23 | Max Grad: 3.07 | Types: {'lepton': 4, 'meson': 6, 'baryon': 12, 'boson': 1} | Atoms: 6
+Step  43000 | Particles:  46 | Max Grad: 6.24 | Types: {'boson': 14, 'baryon': 27, 'lepton': 4, 'meson': 1} | Atoms: 20
+Step  44000 | Particles:  37 | Max Grad: 5.67 | Types: {'lepton': 4, 'boson': 8, 'meson': 4, 'baryon': 21} | Atoms: 21
+Step  45000 | Particles:  34 | Max Grad: 3.22 | Types: {'baryon': 20, 'boson': 8, 'lepton': 3, 'meson': 3} | Atoms: 6
+Step  46000 | Particles:  56 | Max Grad: 3.38 | Types: {'meson': 10, 'baryon': 33, 'boson': 12, 'lepton': 1} | Atoms: 37
+Step  47000 | Particles:  21 | Max Grad: 6.03 | Types: {'lepton': 2, 'boson': 3, 'baryon': 14, 'meson': 2} | Atoms: 3
+Step  48000 | Particles:  59 | Max Grad: 3.73 | Types: {'baryon': 45, 'meson': 7, 'lepton': 2, 'boson': 5} | Atoms: 28
+Step  49000 | Particles:  17 | Max Grad: 3.05 | Types: {'lepton': 2, 'boson': 7, 'baryon': 7, 'meson': 1} | Atoms: 1
+
+============================================================
+FINAL STATISTICS
+============================================================
+Total particles detected: 51.8 (avg last 100 steps)
+Particle type distribution:
+  baryon: 1542
+  boson: 471
+  meson: 213
+  lepton: 121
+
+Final atoms detected: 11
+Stable atomic pairs:
+  Atom 1-3: distance=3.00
+  Atom 6-12: distance=3.16
+  Atom 7-11: distance=2.24
+  Atom 8-9: distance=3.00
+  Atom 8-11: distance=3.16
+
+Creating evolution animation...
+
+(F:\Entropy_Intell\Entro) F:\Entropy_Intell\Code\UniEn>
+
+Uni_L4 尝试分析原子元素
