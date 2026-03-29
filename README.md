@@ -4,6 +4,9 @@ DOI：10.5281/zenodo.19206298
 
 # Cillin_POLOAR
 
+# 2026/3/29
+Article更新了第三版POLOAR理论
+
 ## 项目简介
 
 **Cillin_POLOAR** 是一POLOAR的实验证明实践工程
